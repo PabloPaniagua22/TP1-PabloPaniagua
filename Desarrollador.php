@@ -3,10 +3,10 @@
 require "Empleado.php";
 require "Diseñador.php";
 // Definición de la clase Desarrollador que extiende de la clase Empleado
-class Desarrollador  {
+class Desarrollador extends Empleado {
 
     // Declaración del atributo privado $lenguaje
-    private $lenguaje;
+    public $lenguaje;
 
     // Definición del constructor de la clase Desarrollador
     public function __construct($nombre, $apellido, $sueldo, $lenguaje) {
