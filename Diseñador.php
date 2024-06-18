@@ -1,5 +1,5 @@
 <?php
-include "Empleado.php";
+require_once "Empleado.php";
 // Definición de la clase Diseñador que extiende de la clase Empleado
 class Diseñador extends Empleado {
    
@@ -18,12 +18,8 @@ class Diseñador extends Empleado {
     public function getHerramientas() {
         return $this->herramienta;
     }
-
-    // Método para mostrar la información del diseñador
-    public function mostrarInformacion() {
-        // Llamada al método mostrarInformacion de la clase padre y concatenación del atributo $herramienta
-        return parent::mostrarInformacion() . ", Herramienta: " . $this->herramienta;
+    public function tarea(){
+        return "El Diseñador ". $this->getNom().$this->getApellido(). " Esta diseñando en ". $this->getHerramientas();
     }
 }
-
 ?>
