@@ -1,7 +1,9 @@
 <?php
-
     interface IEmpleado {
-    public function tarea();
-    public function calcularSalarioNeto();
+        public function getNom();
+        public function getApellido();
+        public function getSueldo();
+        public function calcularSalarioNeto();
+        public function tarea();
     }
 ?>
